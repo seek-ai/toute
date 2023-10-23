@@ -141,6 +141,11 @@ QUERIES = {
         'field': True,
         'args': ('value',),
         'kwargs': ('boost',)
+    },
+    'match_phrase': {
+        'field': True,
+        'args': ('query',),
+        'kwargs': ('analyzer', 'boost', 'slop', 'zero_terms_query',)
     }
 }
 
